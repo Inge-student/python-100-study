@@ -1,0 +1,101 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "请输入一个正整数：22\n",
+      "200\n"
+     ]
+    }
+   ],
+   "source": [
+    "## 将一个正整数反转，例如：将12345变成54321，代码如下所示\n",
+    "a=int(input('请输入一个正整数：'))\n",
+    "num=0\n",
+    "cishu=0\n",
+    "while True:\n",
+    "    b=a%10\n",
+    "    a//=10\n",
+    "    \n",
+    "    if b>0:\n",
+    "        cishu+=1\n",
+    "        num=b*10**cishu+a*10**(cishu-1)\n",
+    "    else:\n",
+    "        print(num)\n",
+    "        break\n",
+    "    \n",
+    "        \n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4 18 78\n",
+      "8 11 81\n",
+      "12 4 84\n"
+     ]
+    }
+   ],
+   "source": [
+    "## 公鸡5元一只，母鸡3元一只，小鸡1元三只，用100块钱买一百只鸡，问公鸡、母鸡、小鸡各有多少只？\n",
+    "for a in range(1,20):\n",
+    "    for b in range(1,33):\n",
+    "        c=100-a-b\n",
+    "        if 5*a+3*b+1/3*c==100:\n",
+    "            print(a,b,c)\n",
+    "# 上面使用的方法叫做穷举法，也称为暴力搜索法，\n",
+    "# 这种方法通过一项一项的列举备选解决方案中所有可能的候选项并检查每个候选项是否符合问题的描述，最终得到问题的解。\n",
+    "# 这种方法看起来比较笨拙，\n",
+    "# 但对于运算能力非常强大的计算机来说，通常都是一个可行的甚至是不错的选择，而且问题的解如果存在，这种方法一定能够找到它          "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
